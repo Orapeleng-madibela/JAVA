@@ -18,7 +18,7 @@ public class PasswordGenerator{
         //Allow the user to enter the length they prefere for their password
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the length of the password you want: "); 
-        int digit = input.nextInt();
+        int passwordLength = input.nextInt();
 
         String lowercaseLetters = "abcdefghijklmnopqrstuvwxyz";
         String uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -28,7 +28,7 @@ public class PasswordGenerator{
         String password = ""; //String variable for random password that will be generated
 
         //add digit to the password using for loop
-        for(int i = 0; i < digit; i++){
+        for(int k = 0; k < passwordLength; k++){
             int randomPassword = (int)(5 * Math.random());
 
             switch (randomPassword) {
@@ -59,9 +59,9 @@ public class PasswordGenerator{
         System.out.println("Here is your password : " + password);
         // Alert the user on the strength of the password 
 
-        if(digit < 8){
+        if(passwordLength < 8){
             System.out.println("Your password is WEAK please restart the process and opt for password with length of 8 or more characters ");
-        }else if(digit >= 8 && digit < 16){
+        }else if(passwordLength >= 8 && passwordLength < 16){
             System.out.println("Your password is MODERATE");
         }else{
             System.out.println("Your password is STRONG!!!");
