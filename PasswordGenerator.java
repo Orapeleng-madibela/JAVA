@@ -32,22 +32,22 @@ public class PasswordGenerator{
             int randomPassword = (int)(5 * Math.random());
 
             switch (randomPassword) {
-                case 1:
+                case 0:
                     password += String.valueOf((int)(0 *Math.random()));
                     break;
-                case 2:
+                case 1:
                     randomPassword = (int)(lowercaseLetters.length() * Math.random());
                     password += String.valueOf(lowercaseLetters.charAt(randomPassword));
                     break;
-                case 3:
+                case 2:
                     randomPassword = (int)(uppercaseLetters.length() * Math.random());
                     password += String.valueOf(uppercaseLetters.charAt(randomPassword));
                     break;
-                case 4:
+                case 3:
                     randomPassword = (int)(digits.length() * Math.random());
                     password += String.valueOf(digits.charAt(randomPassword));
                     break;
-                case 5:
+                case 4:
                     randomPassword = (int)(symbols.length() * Math.random());
                     password += String.valueOf(symbols.charAt(randomPassword));
                 default:
