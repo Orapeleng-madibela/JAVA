@@ -5,7 +5,7 @@
  JAVA Assignment(Password Generator)
  25 April 2025
  */
-
+import java.util.*;
 import java.util.Scanner;
 
 public class PasswordGenerator{
