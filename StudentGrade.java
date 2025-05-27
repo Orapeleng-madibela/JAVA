@@ -19,7 +19,7 @@ public class StudentGrade {
          int percentage = input.nextInt();
 
          //Decision
-         if (percentage > 79 ) {
+         if (percentage > 79 && percentage <= 100) {
             System.out.println("A");
          }else if(percentage >= 70){
             System.out.println("B");
